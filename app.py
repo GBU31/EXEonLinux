@@ -1,6 +1,6 @@
 #! /bin/python3
 
-
+import
 from PyQt5 import QtCore, QtGui, QtWidgets
 import core
 
