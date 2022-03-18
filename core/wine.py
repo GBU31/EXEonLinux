@@ -10,8 +10,7 @@ class Wine:
             return False
 
     def install(self): 
-         proc = check_output('snap info wine-platform-3-stable'.split())
-         return proc.decode('utf-8')
+         os.system('snap info wine-platform-3-stable')
         
     def run_exe(self, path, **kwargs):
         print(f'-> {path}')
