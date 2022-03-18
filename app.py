@@ -1,6 +1,10 @@
 #! /bin/python3
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+import os
+try:
+    from PyQt5 import QtCore, QtGui, QtWidgets
+except:
+    os.system("pip install -r requirements.txt")
 import core
 
 class Ui_MainWindow(object):
