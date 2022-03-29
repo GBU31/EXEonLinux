@@ -1,6 +1,7 @@
 #! /bin/python3
 
 import os
+from webbrowser import open_new
 try:
     from PyQt5 import QtCore, QtGui, QtWidgets
 except:
@@ -35,10 +36,12 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "EXEonLinux"))
         self.pushButton.setText(_translate("MainWindow", "Run"))
         self.label.setText(_translate("MainWindow", "Path:"))
+        self.lineEdit.setText(open('lc', 'r').read())
 
     def on_click(self):
-        
         p = self.lineEdit.text()
+        with open('lc', 'w') as lc:
+            lc.write(p)
         w = core.Wine()
         w.run_exe(p)
         
