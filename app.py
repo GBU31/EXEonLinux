@@ -1,12 +1,11 @@
 #! /bin/python3
 
 import os
-from webbrowser import open_new
 try:
     from PyQt5 import QtCore, QtGui, QtWidgets
 except:
     os.system("pip install -r requirements.txt")
-import core
+from core import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -39,15 +38,16 @@ class Ui_MainWindow(object):
         self.lineEdit.setText(open('lc', 'r').read())
 
     def on_click(self):
+        
         p = self.lineEdit.text()
         with open('lc', 'w') as lc:
             lc.write(p)
-        w = core.Wine()
         w.run_exe(p)
         
 
 
 if __name__ == "__main__":
+
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()

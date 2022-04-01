@@ -10,7 +10,7 @@ class Wine:
             return False
 
     def install(self): 
-         os.system('snap info wine-platform-3-stable')
+         os.system('python3 core/install_wine.py')
         
     def run_exe(self, path, **kwargs):
         print(f'-> {path}')
