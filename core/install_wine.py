@@ -1,6 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from  subprocess import check_output
-from time import sleep
 from wine import Wine
 import os
 
