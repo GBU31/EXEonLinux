@@ -36,7 +36,6 @@ class Ui_MainWindow(object):
         self.lineEdit.setText(open('lc', 'r').read())
 
     def on_click(self):
-        
         p = self.lineEdit.text()
         with open('lc', 'w') as lc:
             lc.write(p)
@@ -45,7 +44,6 @@ class Ui_MainWindow(object):
 
 
 if __name__ == "__main__":
-
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
