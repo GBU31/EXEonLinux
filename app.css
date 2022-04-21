@@ -1,0 +1,21 @@
+QWidget {
+    background: #262d27
+}
+QLabel{
+    color: #fff;
+}
+QLineEdit {
+    padding: 1px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-align: auto;
+}
+QPushButton {
+    background:grey;
+    
+}
+QPushButton:hover {
+    background:blue;
+    
+}
