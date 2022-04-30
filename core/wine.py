@@ -13,7 +13,6 @@ class Wine:
          os.system('python3 core/install_wine.py')
         
     def run_exe(self, path, **kwargs):
-        print(f'-> {path}')
         os.system(f'wine {path}')
 
     def __repr__(self):
