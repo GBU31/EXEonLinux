@@ -1,4 +1,4 @@
-# Run app
+# Run
 ```
 cd EXEonLinux
 python3 app.py
